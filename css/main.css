@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+span {
+  position: absolute;
+  left: 550px;
+  top: 80px;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #cf1b1b;
+  font-size: 52px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+
+span::after {
+  content: "Chorsu dollar pokupayem !";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    black 2px,
+    black 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+span:hover:after {
+  top: -10px;
+  left: -10px;
+}
+
+
+.form{
+    margin: 180px auto 0px;
+}
+
+.form__select-desc {
+    margin: 0 0 10px;
+}
